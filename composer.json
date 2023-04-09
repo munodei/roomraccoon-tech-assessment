@@ -1,0 +1,9 @@
+{
+
+    "license": "MIT",
+
+    "require": {
+        "google/recaptcha": "1.2"
+    }
+
+}

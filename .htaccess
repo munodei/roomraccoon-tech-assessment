@@ -1,0 +1,20 @@
+Options +Indexes
+Options +FollowSymLinks +MultiViews
+RewriteEngine on
+#RewriteBase
+AddDefaultCharset UTF-8
+
+RewriteRule \.(nct)$ - [F]
+RewriteRule ^/?$ modules-nct/home-nct/ [L]
+RewriteRule ^home?$ modules-nct/home-nct/ [L]
+#RewriteRule ^.htaccess$ modules/home/ [L]
+
+# code to add trailing slash start
+# RewriteCond %{REQUEST_URI} !(/$|\.|^$)
+# RewriteRule (.*) %{REQUEST_URI}/ [R=301,L]
+# code to add trailing slash end
+
+
+
+FileETag None
+Header set X-UA-Compatible "IE=edge,chrome=1"

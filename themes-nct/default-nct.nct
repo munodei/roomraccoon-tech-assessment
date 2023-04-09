@@ -1,0 +1,18 @@
+<?php
+require_once(DIR_THEME."header-nct.php");
+?>
+
+
+<body>
+  <header class="intro">
+    <h1>RoomRaccoon Technical Assessment | Shopping Cart</h1>
+  </header>
+
+  <?php
+
+  if($home){
+			require_once(DIR_TMPL."home-nct.nct");
+  }
+
+  require_once(DIR_THEME."footer-nct.php");
+?>
